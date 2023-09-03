@@ -17,6 +17,9 @@ export function HomeScreen() {
   const linkProps = useLink({
     href: '/user/nate',
   })
+  const newRouteLinkProps = useLink({
+    href: '/new/route',
+  })
 
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
@@ -48,6 +51,7 @@ export function HomeScreen() {
       <XStack>
         <Button {...linkProps}>Link to user</Button>
       </XStack>
+      <Button {...newRouteLinkProps}>Link to new route</Button>
 
       <SheetDemo />
     </YStack>
